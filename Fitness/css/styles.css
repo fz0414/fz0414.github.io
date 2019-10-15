@@ -1,7 +1,7 @@
 /* Style Sheet Created by Christine Ayris 5994 */ 
 
 body {
-	background-color: #FFFF99; 
+	background-color: #1D1D1C; 
 	
 }
 
@@ -19,9 +19,7 @@ img {
 
 
 header {
-	background-color: #FFFFFF;
-    margin-top: 0.2em;
-    border-radius: 0.5em;
+
 	text-align: center;
 }
 
@@ -30,6 +28,7 @@ nav  {
 	font-size: 1.25em;
 	font-weight: bold;
 	text-align: center;
+	margin-top: -1.5em;
 	
 }
 
@@ -40,7 +39,7 @@ nav ul {
 }
 
 nav li {
-    background-color: #009933;
+    background-color: #9D9D93;
     border-radius: 2em;
 	list-style-type: none;
 	margin: 0.3em;
@@ -71,10 +70,18 @@ main {
 	font-size: 1em;
 	margin-top: 0.5em;
 	padding: 1em;
-	border-radius: 1em; 
-	border-top: solid 0.2em #009933;
-	border-bottom: solid 0.2em #009933;
+	border-radius: 2em 0 2em 0; 
+    opacity: 0.85; 
 	
+}
+
+main a {
+    background-color: #9D9D93;
+    border-radius: 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0.5em;
+    text-decoration: none;	
 	
 }
 
@@ -83,6 +90,14 @@ footer {
 font-size: 0.70em;
 text-align: center;
 margin-top: 2em;
+color: #FFFFFF;
+	
+}
+
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;	
 	
 }
 
@@ -96,6 +111,8 @@ margin-top: 2em;
 	
 }
 
+
+/* Tablet Rules */
 @media only screen and (min-width: 660px) {
 
 nav li {
@@ -108,13 +125,16 @@ nav li {
     padding-right: 0;
     width: 18%;	
 	white-space: nowrap;
+	border-radius: 0;
+	background-color: transparent;
 	
 		
 }	
 
 main {
     clear: left;
-    margin-top: 4em;
+    margin-top: -0.3em;
+	border-radius: 0;
 	
 }
 
@@ -150,6 +170,28 @@ dt {
 
 }
 
+h1 {
+	text-align: center;
+  	
+}
+
+figure img {
+    background-color: #1D1D1C;
+    display: inline;
+    height: 8em;
+    width: 28%;
+    margin:	1%;
+	padding: 1%;	
+	
+}
+
+figure a {
+   background-color: transparent;
+   padding: 0;
+   text-decoration: none;   
+	
+}
+
 	
 }
 
@@ -157,9 +199,24 @@ dt {
 @media only screen and (min-width: 830px) {
 
      #container {
-        width: 80%;
+         background-color: 1D1D1C;
 
-	 }		 
+	 }
+
+
+   header {
+     text-align: left;
+
+   }	   
+   
+   nav {
+	   float: right;
+	   margin-top: -7em;
+	   margin-right: 3em;
+	   margin-bottom: 0;
+	   width: 65%;
+	   
+   }
 	
 	nav ul {
 		margin: 0;
@@ -168,9 +225,6 @@ dt {
 	}
 	
 	nav li {
-        border-radius: 0;
-        border-top: solid #000000;
-        border-bottom: solid #000000;
         margin-left: 0;
         margin-right: 0;
         padding: 0;
@@ -180,6 +234,8 @@ dt {
     nav li a {
         display: inline-block;
 		padding: 0.7em;
+		text-shadow: 0.2em 0.1em #3D3D35;
+		
 	}		
 	
 	nav li a:link {
@@ -188,36 +244,55 @@ dt {
 	}
 	
 	nav li a:visited {
-	    color: #FFFF99;	
+	    color: #CCCCFF;	
 	}
 	
 	nav li a:hover  {
-	    color: #FFFF00;
+	    color: #9D9D93;
         font-family: italic;		
     }
 	
 	body  {
-	    background: -moz-linear-gradient(white, blue); /*Firefox */
-        background: -o-linear-gradient(white, blue); /* Opera */		
-		background: -webkit-linear-gradient(white, blue); /* Chrome, Your Mom */
-	    background: linear-gradient(white, blue);
-		background-attachment: fixed;
-		
+         background-color: #FFFFFF;
 	}	
 	
 	
     main {
-        border-style: none;
-		box-shadow: 0.5em 0.5em 0.5em #404040;
-		margin-bottom: 1em;
-		margin-top: 1em;
+      background-color: #1D1D1C;
 	}		
 	
 	main p {
-        padding-left: 0.5em;
-		padding-right: 0.5em;
+		color: #FFFFFF;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+      
+	}
+	
+	
+	h1 {
+		color: #FFFFFF;
+     		
+	}
+	
+	figure img {
+	   height: 15em;
+        opacity: 0.7;		
 		
 	}
+	
+	figure img:hover {
+	    opacity: 1;		
+		
+	}
+	
+	footer  {
+		background-color: #2A2A2A;
+		margin-top: -0.2em;
+		padding: 2em;
+		
+	}
+	
 	
 	.items {
       margin-bottom: 6em; 		
